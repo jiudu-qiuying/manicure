@@ -1,10 +1,16 @@
 package com.qiuying.manicure.user.controller;
 
 
-import org.springframework.web.bind.annotation.RequestMapping;
+import com.qiuying.manicure.model.Result;
+import com.qiuying.manicure.user.entity.UserInfoVo;
+import org.springframework.web.bind.annotation.*;
 
-import org.springframework.web.bind.annotation.RestController;
 import com.qiuying.manicure.base.BaseController;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import static com.qiuying.manicure.utils.JMockDataUtils.mock;
 
 /**
  * <p>
@@ -17,6 +23,8 @@ import com.qiuying.manicure.base.BaseController;
 @RestController
 @RequestMapping("/user/info")
 public class UserInfoController extends BaseController {
+
+
 
 }
 

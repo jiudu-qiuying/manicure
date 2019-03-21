@@ -3,6 +3,7 @@ package com.qiuying.manicure.pay.entity;
 import java.time.LocalDateTime;
 import com.qiuying.manicure.base.BaseEntity;
 import lombok.Data;
+import org.springframework.format.annotation.DateTimeFormat;
 
 /**
  * <p>
@@ -25,11 +26,12 @@ public class PayRecord extends BaseEntity {
     /**
      * 支付人
      */
-    private String payUser;
+    private String wechatNumber;
 
     /**
      * 创建时间
      */
+    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private LocalDateTime createTime;
 
     /**

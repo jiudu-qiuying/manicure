@@ -4,6 +4,7 @@ import java.time.LocalDateTime;
 
 import com.qiuying.manicure.base.BaseEntity;
 import lombok.Data;
+import org.springframework.format.annotation.DateTimeFormat;
 
 /**
  * <p>
@@ -36,11 +37,13 @@ public class EventInfo extends BaseEntity {
     /**
      * 创建时间
      */
+    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private LocalDateTime createTime;
 
     /**
      * 截止时间
      */
+    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private LocalDateTime endTime;
 
     /**

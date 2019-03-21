@@ -19,7 +19,7 @@ public class IntegralRecord extends BaseEntity {
     /**
      * 记录人
      */
-    private String userId;
+    private String wechatNumber;
 
     /**
      * 变更类型   0/增加    1/减少

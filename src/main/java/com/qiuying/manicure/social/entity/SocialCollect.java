@@ -3,6 +3,7 @@ package com.qiuying.manicure.social.entity;
 import java.time.LocalDateTime;
 import com.qiuying.manicure.base.BaseEntity;
 import lombok.Data;
+import org.springframework.format.annotation.DateTimeFormat;
 
 /**
  * <p>
@@ -25,11 +26,12 @@ public class SocialCollect extends BaseEntity {
     /**
      * 收藏人
      */
-    private String userId;
+    private String wechatNumber;
 
     /**
      * 收藏时间
      */
+    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private LocalDateTime createTime;
 
     /**

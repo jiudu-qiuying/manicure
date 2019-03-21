@@ -16,9 +16,10 @@ public class JMockDataUtils {
     private static MockConfig config = new MockConfig();
 
     static {
+        //时间处理
         config.registerMocker(new LocalDateMocker(), LocalDate.class);
         config.registerMocker(new LocalDateTimeMocker(), LocalDateTime.class);
-        config.excludes("isDelete");
+        config.excludes("isDelete","imagePath");
     }
 
     public static <T> T mock(Class<T> classzz) {

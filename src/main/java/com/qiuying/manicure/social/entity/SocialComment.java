@@ -5,6 +5,7 @@ import com.qiuying.manicure.base.BaseEntity;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
+import org.springframework.format.annotation.DateTimeFormat;
 
 /**
  * <p>
@@ -27,11 +28,12 @@ public class SocialComment extends BaseEntity {
     /**
      * 评论人
      */
-    private String userId;
+    private String wechatNumber;
 
     /**
      * 评论时间
      */
+    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private LocalDateTime createTime;
 
     /**
